@@ -15,8 +15,9 @@ int tadd_ok(int a, int b){
 
 	if (a > 0 && b > 0 && sum < 0)
 		return 0;
-	else if (a < 0 && 
-	return 0;
+	else if (a < 0 && b < 0 && sum > 0)
+		return 0;
+	return 1;
 }
 
 int main(int argc, char *argv[])

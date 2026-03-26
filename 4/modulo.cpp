@@ -4,7 +4,13 @@ using namespace std;
 
 int modulo(int a, int b)
 {
+	int ret;
+	ret = a % b;
 
+	if (ret < 0)
+		ret += b;
+
+	return ret;
 }
 
 int main (int argc, char *argv[])
