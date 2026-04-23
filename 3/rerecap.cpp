@@ -3,7 +3,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 	int a, b, sum, num;
-	
+
 	if (argc != 3)
 	{
 		cerr << "Error! You must input two numbers" << endl;
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		num += 1;
 	}
 
-	cout << "Sum: " << endl;
+	cout << "Sum: " << sum << endl;
 	return 0;
 }
