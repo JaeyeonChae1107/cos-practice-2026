@@ -1,15 +1,18 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-int uadd_ok(unsigned a, unsigned b){
+int uadd_ok(unsigned a, unsigned b)
+{
 	int sum;
-	sum = a+ b;
+	sum = a + b;
+
 	if (sum < a)
 		return 0;
 	return 1;
 }
 
-int tadd_ok(int a, int b){
+int tadd_ok(int a, int b)
+{
 	int sum;
 	sum = a + b;
 
@@ -32,8 +35,8 @@ int main(int argc, char *argv[])
 	}
 	a = strtol(argv[1], NULL, 16);
 	b = strtol(argv[2], NULL, 16);
-	x = (unsigned) a;
-	y = (unsigned) b;
+	x = (unsigned)a;
+	y = (unsigned)b;
 
 	cout << "Unsigned Addition ===" << endl;
 	if (uadd_ok(x, y))
